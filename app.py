@@ -84,7 +84,7 @@ def pergunta3():
     if request.method == "POST":
         resposta = request.form.get("resposta")
         # Verifique qual opção é correta
-        if resposta == "":
+        if resposta == "3":
             session["score"] += 1
         return redirect(url_for("resultado"))
     
