@@ -63,9 +63,9 @@ def pergunta3():
     return render_template("pergunta3.html")
 
 @app.route("/pergunta4", methods=["GET", "POST"])
-def pergunta3():
+def pergunta4():
     """
-    Página da terceira pergunta.
+    Página da quarta pergunta.
     """
     if request.method == "POST":
         resposta = request.form.get("resposta")
@@ -77,9 +77,9 @@ def pergunta3():
     return render_template("pergunta4.html")
 
 @app.route("/pergunta5", methods=["GET", "POST"])
-def pergunta3():
+def pergunta5():
     """
-    Página da terceira pergunta.
+    Página da quinta pergunta.
     """
     if request.method == "POST":
         resposta = request.form.get("resposta")
