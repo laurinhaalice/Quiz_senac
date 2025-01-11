@@ -99,6 +99,5 @@ def resultado():
     pontuacao_final = session.get("score", 0)
     return render_template("resultado.html", pontuacao=pontuacao_final)
 
-
 if __name__ == "__main__":
     app.run(debug=True)
