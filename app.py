@@ -97,7 +97,14 @@ def resultado():
     Exibe a pontuação final.
     """
     pontuacao_final = session.get("score", 0)
-    return render_template("resultado.html", pontuacao=pontuacao_final)
+
+    if pontuacao_final >= 4:
+        mensagem = "Parabéns!"
+
+    else:
+        mensagem = "Muito bem, mas que tal tentar de novo?"
+
+    return render_template("resultado.html", pontuacao=pontuacao_final, resposta=mensagem)
 
 
 if __name__ == "__main__":
